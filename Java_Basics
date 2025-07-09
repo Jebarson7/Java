@@ -1,0 +1,101 @@
+1.To print Hi:
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hi");
+	}
+}
+
+2.Sum of Two Numbers and user input:
+
+import java.io.*;
+import java.util.Scanner;
+class Main{
+        public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter num1");
+        int n = sc.nextInt();
+        System.out.println("enter num2");
+        int n1 = sc.nextInt();
+        int n2 = n+n1;
+        System.out.println("sum of numbers is " +n2);
+        sc.nextLine();
+        System.out.println("enter name");
+        String name=sc.nextLine();
+        System.out.println("My name is "+name);
+    }
+}
+
+3/Eligible or not eligible:
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	  
+		Scanner o=new Scanner(System.in);
+		
+		System.out.print("Enter age :");
+		int age=o.nextInt();
+		if(age>=18)
+		    System.out.println("you are eligible");
+		else{
+		    System.out.println("Nooo");
+		}    
+		
+		
+	}
+}
+
+4.Print name,street,place,district:
+
+import java.io.*;
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	  
+	   
+		
+	
+		Scanner o=new Scanner(System.in);
+		System.out.print("Enter your name :");
+		String l=o.nextLine();
+		System.out.print("Enter your street : ");
+		String l1=o.nextLine();
+		System.out.print("Enter Place :");
+		String l2=o.nextLine();
+		
+		System.out.println("District: ");
+		String l3=o.nextLine();
+		System.out.println("This is "+l+ " from "+l2 +","+l3 +","+l1);
+		
+		
+		
+	}
+}
+
+5.Print 6 subject marks and to find average:
+
+import java.util.Scanner;
+public class Exam {
+
+	public static void main(String[] args) {
+	
+		Scanner input=new Scanner(System.in);
+        int mark,sum=0;
+        int i=1;
+        float avg;
+        while(i<=6) {
+        	System.out.println("Enter the mark :");
+        	mark=input.nextInt();
+        	sum=sum+mark;
+        	i++;
+        }
+        System.out.println("The sum of the total 6 marks is :"+sum);
+        avg=sum/6;
+        System.out.println("The Average is:"+avg);
+	}
+
+}
